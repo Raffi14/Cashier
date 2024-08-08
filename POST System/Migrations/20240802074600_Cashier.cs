@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace POST_System.Migrations
 {
     /// <inheritdoc />
-    public partial class DB_Cashier : Migration
+    public partial class Cashier : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

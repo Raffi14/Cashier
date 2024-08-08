@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace POST_System.DB_Create
 {
-    internal class User_account
+    public class User_account
     {
         public int Id { get; set; }
         public string User_Type { get; set; }

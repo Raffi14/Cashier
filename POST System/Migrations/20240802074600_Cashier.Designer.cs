@@ -12,8 +12,8 @@ using POST_System;
 namespace POST_System.Migrations
 {
     [DbContext(typeof(Database))]
-    [Migration("20240730042704_DB_Cashier")]
-    partial class DB_Cashier
+    [Migration("20240802074600_Cashier")]
+    partial class Cashier
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

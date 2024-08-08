@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace POST_System.DB_Create
 {
-    internal class Sale
+    public class Sale
     {
         public int Id { get; set; }
         public DateTime SaleDate { get; set; }

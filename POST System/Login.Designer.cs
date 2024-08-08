@@ -46,7 +46,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(131, 252);
+            button1.Location = new Point(163, 256);
             button1.Name = "button1";
             button1.Size = new Size(125, 38);
             button1.TabIndex = 1;
@@ -59,7 +59,7 @@
             username.Location = new Point(49, 121);
             username.Name = "username";
             username.PlaceholderText = "username";
-            username.Size = new Size(286, 27);
+            username.Size = new Size(330, 27);
             username.TabIndex = 2;
             // 
             // password
@@ -68,21 +68,24 @@
             password.Location = new Point(49, 192);
             password.Name = "password";
             password.PlaceholderText = "password";
-            password.Size = new Size(286, 27);
+            password.Size = new Size(330, 27);
             password.TabIndex = 3;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
             BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(440, 376);
+            ClientSize = new Size(434, 376);
             Controls.Add(password);
             Controls.Add(username);
             Controls.Add(button1);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MaximumSize = new Size(453, 423);
+            MinimumSize = new Size(452, 423);
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
             ResumeLayout(false);
