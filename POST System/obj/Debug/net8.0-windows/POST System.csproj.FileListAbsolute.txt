@@ -99,5 +99,6 @@ C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\re
 C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST System.pdb
 C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST System.genruntimeconfig.cache
 C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\ref\POST System.dll
-C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST_System.AdminHome.resources
 C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST_System.AdminPages.AddProductForm.resources
+C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST_System.MainPage.resources
+C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST_System.AdminPages.ProductPage.resources

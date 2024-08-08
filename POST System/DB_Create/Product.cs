@@ -21,7 +21,7 @@ namespace POST_System.DB_Create
                 e.HasKey(e => e.Id);
                 e.Property(e => e.Id).ValueGeneratedOnAdd();
                 e.Property(e => e.Name).HasColumnType("varchar(50)").IsRequired();
-                e.Property(e => e.Price).HasColumnType("decimal(10,2)").IsRequired();
+                e.Property(e => e.Price).HasColumnType("int").IsRequired();
                 e.Property(e => e.Stock).HasColumnType("int").IsRequired();
             });
         }

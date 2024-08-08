@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             InpName = new TextBox();
-            InpPrice = new TextBox();
             InpStock = new TextBox();
+            InpPrice = new TextBox();
             ProductTitle = new Label();
             button1 = new Button();
             SuspendLayout();
@@ -43,21 +43,21 @@
             InpName.Size = new Size(309, 27);
             InpName.TabIndex = 0;
             // 
-            // InpPrice
-            // 
-            InpPrice.Location = new Point(55, 189);
-            InpPrice.Name = "InpPrice";
-            InpPrice.PlaceholderText = "stock";
-            InpPrice.Size = new Size(309, 27);
-            InpPrice.TabIndex = 1;
-            // 
             // InpStock
             // 
-            InpStock.Location = new Point(55, 250);
+            InpStock.Location = new Point(55, 189);
             InpStock.Name = "InpStock";
-            InpStock.PlaceholderText = "price";
+            InpStock.PlaceholderText = "stock";
             InpStock.Size = new Size(309, 27);
-            InpStock.TabIndex = 2;
+            InpStock.TabIndex = 1;
+            // 
+            // InpPrice
+            // 
+            InpPrice.Location = new Point(55, 250);
+            InpPrice.Name = "InpPrice";
+            InpPrice.PlaceholderText = "price";
+            InpPrice.Size = new Size(309, 27);
+            InpPrice.TabIndex = 2;
             // 
             // ProductTitle
             // 
@@ -86,13 +86,12 @@
             ClientSize = new Size(424, 385);
             Controls.Add(button1);
             Controls.Add(ProductTitle);
-            Controls.Add(InpStock);
             Controls.Add(InpPrice);
+            Controls.Add(InpStock);
             Controls.Add(InpName);
             MinimumSize = new Size(398, 362);
             Name = "AddProductForm";
             Text = "Adding Product";
-            Load += AddProductForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -100,8 +99,8 @@
         #endregion
 
         private TextBox InpName;
-        private TextBox InpPrice;
         private TextBox InpStock;
+        private TextBox InpPrice;
         private Label ProductTitle;
         private Button button1;
     }

@@ -12,7 +12,7 @@ using POST_System;
 namespace POST_System.Migrations
 {
     [DbContext(typeof(Database))]
-    [Migration("20240802074600_Cashier")]
+    [Migration("20240808071111_Cashier")]
     partial class Cashier
     {
         /// <inheritdoc />
@@ -62,8 +62,8 @@ namespace POST_System.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(50)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(10,2)");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.Property<int>("Stock")
                         .HasColumnType("int");

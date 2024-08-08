@@ -12,19 +12,14 @@ using POST_System.DB_Create;
 
 namespace POST_System
 {
-    public partial class AdminHome : Form
+    public partial class MainPage : Form
     {
         public string username { get; set; }
         public string isActive;
 
-        public AdminHome()
+        public MainPage()
         {
             InitializeComponent();
-            RefreshData();
-        }
-        public void RefreshData()
-        {
-            productBindingSource.DataSource = Program.db.Products.ToList();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,19 +28,9 @@ namespace POST_System
             Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AdminHome_Load(object sender, EventArgs e)
         {
             Username.Text = this.username;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,14 +38,29 @@ namespace POST_System
             isActive = "dataProduct";
             if (isActive == "dataProduct")
             {
-                productBox.Visible = true;
+                ProductPage product = new ProductPage();
+                product.TopLevel = false;
+                product.Dock = DockStyle.Fill;
+                product.FormBorderStyle = FormBorderStyle.None;
+                productBox.Controls.Clear();
+                productBox.Controls.Add(product);
+                product.Show();
                 ProductNav.BackColor = Color.Transparent;
+                TransactionNav.BackColor = Color.Gray;
+                Staff.BackColor = Color.Gray;
             }
         }
 
-        private void AddProduct_Click(object sender, EventArgs e)
+        private void TransactionNav_Click(object sender, EventArgs e)
         {
-            new AddProductForm().ShowDialog();
+            isActive = "dataTransaction";
+            if (isActive == "dataTransaction")
+            {
+                productBox.Controls.Clear();
+                TransactionNav.BackColor = Color.Transparent;
+                ProductNav.BackColor = Color.Gray;
+                Staff.BackColor = Color.Gray;
+            }
         }
     }
 

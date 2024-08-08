@@ -24,7 +24,7 @@ namespace POST_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            User_account user = Program.db.Users.FirstOrDefault(value => value.Username == username.Text && value.Password == password.Text);
+            User_account? user = Program.db.Users.FirstOrDefault(value => value.Username == username.Text && value.Password == password.Text);
 
             if (user == null)
                 MessageBox.Show("username atau password salah!");
@@ -34,8 +34,8 @@ namespace POST_System
                 switch (user.User_Type)
                 {
                     case "admin":
-                        AdminHome HomePage = new AdminHome();
-                        HomePage.username = user.Username;
+                        MainPage HomePage = new MainPage();
+                        HomePage.username = user.User_Type;
                         HomePage.Show();
                         this.Hide();
                         break;
@@ -45,10 +45,6 @@ namespace POST_System
             }
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
 
     }
 }
