@@ -31,11 +31,11 @@
             components = new System.ComponentModel.Container();
             AddProduct = new Button();
             ProductList = new DataGridView();
-            productBindingSource = new BindingSource(components);
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Id = new DataGridViewTextBoxColumn();
             nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             priceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             stockDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            productBindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)ProductList).BeginInit();
             ((System.ComponentModel.ISupportInitialize)productBindingSource).BeginInit();
             SuspendLayout();
@@ -61,7 +61,7 @@
             ProductList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             ProductList.BackgroundColor = Color.Silver;
             ProductList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ProductList.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, priceDataGridViewTextBoxColumn, stockDataGridViewTextBoxColumn });
+            ProductList.Columns.AddRange(new DataGridViewColumn[] { Id, nameDataGridViewTextBoxColumn, priceDataGridViewTextBoxColumn, stockDataGridViewTextBoxColumn });
             ProductList.DataSource = productBindingSource;
             ProductList.ImeMode = ImeMode.NoControl;
             ProductList.Location = new Point(0, 50);
@@ -72,19 +72,16 @@
             ProductList.ScrollBars = ScrollBars.Vertical;
             ProductList.Size = new Size(744, 452);
             ProductList.TabIndex = 5;
+            ProductList.CellClick += ProductList_CellClick;
             // 
-            // productBindingSource
+            // Id
             // 
-            productBindingSource.DataSource = typeof(DB_Create.Product);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.FillWeight = 23.5294113F;
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
+            Id.DataPropertyName = "Id";
+            Id.FillWeight = 23.5294113F;
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -113,6 +110,10 @@
             stockDataGridViewTextBoxColumn.Name = "stockDataGridViewTextBoxColumn";
             stockDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // productBindingSource
+            // 
+            productBindingSource.DataSource = typeof(DB_Create.Product);
+            // 
             // ProductPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -133,7 +134,7 @@
         private Button AddProduct;
         private DataGridView ProductList;
         private BindingSource productBindingSource;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn stockDataGridViewTextBoxColumn;

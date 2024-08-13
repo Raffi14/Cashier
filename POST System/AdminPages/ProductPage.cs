@@ -1,4 +1,6 @@
-﻿using System;
+﻿using POST_System.AdminPages.Components;
+using POST_System.DB_Create;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +21,24 @@ namespace POST_System.AdminPages
         }
         public void RefreshData()
         {
-            productBindingSource.DataSource = Program.db.Products.ToList();
+            productBindingSource.DataSource = Program.db.Products.OrderBy(v => v.Id).ToList();
         }
 
         private void AddProduct_Click(object sender, EventArgs e)
         {
             new AddProductForm(this).ShowDialog();
+        }
+
+        private void ProductList_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ProductList.CurrentRow.Selected = true;
+
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                UpProduct Update = new UpProduct(this);
+                Update.IdProduct = ProductList.Rows[e.RowIndex].Cells["Id"].Value.ToString();
+                Update.ShowDialog();
+            }
         }
     }
 }

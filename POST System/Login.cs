@@ -16,7 +16,6 @@ namespace POST_System
 {
     public partial class Login : Form
     {
-        public static string Username = string.Empty;
         public Login()
         {
             InitializeComponent();

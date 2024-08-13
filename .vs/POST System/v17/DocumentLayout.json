@@ -3,35 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\POST System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|C:\\Users\\LENOVO\\source\\repos\\POST System\\post system\\adminpages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|C:\\Users\\LENOVO\\source\\repos\\POST System\\post system\\adminpages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\components\\addproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\components\\addproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|C:\\Users\\LENOVO\\source\\repos\\POST System\\post system\\adminpages\\components\\upproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\components\\upproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\components\\upproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\components\\upproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\productpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\productpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\components\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\components\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\mainpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\mainpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|C:\\Users\\LENOVO\\source\\repos\\POST System\\post system\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\db_create\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\db_create\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\components\\upproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\components\\upproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|C:\\Users\\LENOVO\\source\\repos\\POST System\\post system\\adminpages\\components\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\components\\addproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\components\\addproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\components\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\components\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -39,8 +51,12 @@
       "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\components\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\components\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|c:\\users\\lenovo\\source\\repos\\post system\\post system\\adminpages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|POST System\\POST System.csproj|solutionrelative:post system\\adminpages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,17 +66,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\Login.cs",
               "RelativeDocumentMoniker": "POST System\\Login.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\Login.cs",
               "RelativeToolTip": "POST System\\Login.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAswC4AAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAcwBEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T05:53:58.594Z",
               "IsPinned": true,
@@ -68,7 +84,119 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddProduct.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.cs",
+              "RelativeDocumentMoniker": "POST System\\AdminPages\\Components\\AddProduct.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.cs",
+              "RelativeToolTip": "POST System\\AdminPages\\Components\\AddProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T04:31:30.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpProduct.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\UpProduct.Designer.cs",
+              "RelativeDocumentMoniker": "POST System\\AdminPages\\Components\\UpProduct.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\UpProduct.Designer.cs",
+              "RelativeToolTip": "POST System\\AdminPages\\Components\\UpProduct.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T03:46:07.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddProduct.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.cs",
+              "RelativeDocumentMoniker": "POST System\\AdminPages\\Components\\AddProduct.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.cs [Design]",
+              "RelativeToolTip": "POST System\\AdminPages\\Components\\AddProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T04:03:51.654Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\MainPage.cs",
+              "RelativeDocumentMoniker": "POST System\\AdminPages\\MainPage.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\MainPage.cs [Design]",
+              "RelativeToolTip": "POST System\\AdminPages\\MainPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T04:03:42.084Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UpProduct.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\UpProduct.cs",
+              "RelativeDocumentMoniker": "POST System\\AdminPages\\Components\\UpProduct.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\UpProduct.cs",
+              "RelativeToolTip": "POST System\\AdminPages\\Components\\UpProduct.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T03:46:35.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\ProductPage.cs",
+              "RelativeDocumentMoniker": "POST System\\AdminPages\\ProductPage.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\ProductPage.cs [Design]",
+              "RelativeToolTip": "POST System\\AdminPages\\ProductPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T03:10:54.963Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\Login.cs",
+              "RelativeDocumentMoniker": "POST System\\Login.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\Login.cs [Design]",
+              "RelativeToolTip": "POST System\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T07:58:52.625Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpProduct.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\UpProduct.cs",
+              "RelativeDocumentMoniker": "POST System\\AdminPages\\Components\\UpProduct.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\UpProduct.cs [Design]",
+              "RelativeToolTip": "POST System\\AdminPages\\Components\\UpProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T07:55:33.372Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductPage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\ProductPage.Designer.cs",
+              "RelativeDocumentMoniker": "POST System\\AdminPages\\ProductPage.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\ProductPage.Designer.cs",
+              "RelativeToolTip": "POST System\\AdminPages\\ProductPage.Designer.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwEoAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T07:30:30.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AddProduct.Designer.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.Designer.cs",
               "RelativeDocumentMoniker": "POST System\\AdminPages\\Components\\AddProduct.Designer.cs",
@@ -82,103 +210,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\DB_Create\\Product.cs",
-              "RelativeDocumentMoniker": "POST System\\DB_Create\\Product.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\DB_Create\\Product.cs",
-              "RelativeToolTip": "POST System\\DB_Create\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T06:58:18.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MainPage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\MainPage.Designer.cs",
               "RelativeDocumentMoniker": "POST System\\AdminPages\\MainPage.Designer.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\MainPage.Designer.cs",
               "RelativeToolTip": "POST System\\AdminPages\\MainPage.Designer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBwAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T06:51:14.917Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "ProductPage.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\ProductPage.cs",
               "RelativeDocumentMoniker": "POST System\\AdminPages\\ProductPage.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\ProductPage.cs",
               "RelativeToolTip": "POST System\\AdminPages\\ProductPage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAYwBoAAAAMAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T06:48:53.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\ProductPage.cs",
-              "RelativeDocumentMoniker": "POST System\\AdminPages\\ProductPage.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\ProductPage.cs [Design]",
-              "RelativeToolTip": "POST System\\AdminPages\\ProductPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T06:47:35.364Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "MainPage.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\MainPage.cs",
               "RelativeDocumentMoniker": "POST System\\AdminPages\\MainPage.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\MainPage.cs",
               "RelativeToolTip": "POST System\\AdminPages\\MainPage.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAqwDEAAAAtAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T06:47:05.024Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\MainPage.cs",
-              "RelativeDocumentMoniker": "POST System\\AdminPages\\MainPage.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\MainPage.cs [Design]",
-              "RelativeToolTip": "POST System\\AdminPages\\MainPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T06:47:01.899Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddProduct.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.cs",
-              "RelativeDocumentMoniker": "POST System\\AdminPages\\Components\\AddProduct.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.cs",
-              "RelativeToolTip": "POST System\\AdminPages\\Components\\AddProduct.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAzwCEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T06:46:50.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddProduct.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.cs",
-              "RelativeDocumentMoniker": "POST System\\AdminPages\\Components\\AddProduct.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\AdminPages\\Components\\AddProduct.cs [Design]",
-              "RelativeToolTip": "POST System\\AdminPages\\Components\\AddProduct.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T06:46:48.992Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
