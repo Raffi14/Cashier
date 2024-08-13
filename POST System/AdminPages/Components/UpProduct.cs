@@ -32,7 +32,8 @@ namespace POST_System.AdminPages.Components
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (product != null)
+            DialogResult result = MessageBox.Show("Are you sure you?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
             {
                 product.Name = EdName.Text;
                 product.Price = Convert.ToInt32(EdPrice.Text);
@@ -40,8 +41,13 @@ namespace POST_System.AdminPages.Components
 
                 Program.db.SaveChanges();
                 ProductPage.RefreshData();
-                this.Close();   
+                this.Close();
             }
+        }
+
+        private void ProductTitle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -44,6 +44,16 @@ namespace POST_System
             }
         }
 
-
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                password.PasswordChar = '\0';
+            }
+            else
+            {
+                password.PasswordChar = '*';
+            }
+        }
     }
 }

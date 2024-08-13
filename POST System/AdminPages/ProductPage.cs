@@ -14,6 +14,7 @@ namespace POST_System.AdminPages
 {
     public partial class ProductPage : Form
     {
+        public string IdProduct = string.Empty;
         public ProductPage()
         {
             InitializeComponent();
@@ -36,8 +37,51 @@ namespace POST_System.AdminPages
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 UpProduct Update = new UpProduct(this);
-                Update.IdProduct = ProductList.Rows[e.RowIndex].Cells["Id"].Value.ToString();
+                Update.IdProduct = IdProduct;
                 Update.ShowDialog();
+            }
+        }
+
+        private void ProductList_Click(object sender, DataGridViewCellEventArgs e)
+        {
+            ProductList.CurrentRow.Selected = true;
+
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                IdProduct = ProductList.Rows[e.RowIndex].Cells["Id"].Value.ToString();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (IdProduct == string.Empty)
+                MessageBox.Show("Please select a product");
+
+            if(IdProduct != string.Empty)
+            {
+                DialogResult result = MessageBox.Show("Are you sure you to delete this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (result == DialogResult.Yes)
+                {
+                    var ProductId = Program.db.Products.Find(Convert.ToInt32(IdProduct));
+                    Program.db.Products.Remove(ProductId);
+                    Program.db.SaveChanges();
+                    RefreshData();
+                }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = Search.Text;
+
+            if(searchText.Length > 0)
+            {
+                productBindingSource.DataSource = Program.db.Products.Where(v => v.Name.Contains(searchText)).OrderBy(v => v.Name).ToList();
+            }
+            else
+            {
+                RefreshData();
             }
         }
     }

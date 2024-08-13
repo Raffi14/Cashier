@@ -54,6 +54,7 @@
             ProductTitle.Size = new Size(281, 60);
             ProductTitle.TabIndex = 9;
             ProductTitle.Text = "Edit Product";
+            ProductTitle.Click += ProductTitle_Click;
             // 
             // EdPrice
             // 

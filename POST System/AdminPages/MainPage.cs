@@ -44,6 +44,7 @@ namespace POST_System
                 product.FormBorderStyle = FormBorderStyle.None;
                 productBox.Controls.Clear();
                 productBox.Controls.Add(product);
+                productBox.Text = "Product";
                 product.Show();
                 ProductNav.BackColor = Color.Transparent;
                 TransactionNav.BackColor = Color.Gray;
@@ -57,6 +58,7 @@ namespace POST_System
             if (isActive == "dataTransaction")
             {
                 productBox.Controls.Clear();
+                productBox.Text = "Transaction";
                 TransactionNav.BackColor = Color.Transparent;
                 ProductNav.BackColor = Color.Gray;
                 Staff.BackColor = Color.Gray;

@@ -36,6 +36,9 @@
             priceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             stockDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             productBindingSource = new BindingSource(components);
+            button1 = new Button();
+            label1 = new Label();
+            Search = new TextBox();
             ((System.ComponentModel.ISupportInitialize)ProductList).BeginInit();
             ((System.ComponentModel.ISupportInitialize)productBindingSource).BeginInit();
             SuspendLayout();
@@ -72,7 +75,8 @@
             ProductList.ScrollBars = ScrollBars.Vertical;
             ProductList.Size = new Size(744, 452);
             ProductList.TabIndex = 5;
-            ProductList.CellClick += ProductList_CellClick;
+            ProductList.CellClick += ProductList_Click;
+            ProductList.CellDoubleClick += ProductList_CellClick;
             // 
             // Id
             // 
@@ -114,12 +118,45 @@
             // 
             productBindingSource.DataSource = typeof(DB_Create.Product);
             // 
+            // button1
+            // 
+            button1.BackColor = Color.LightGray;
+            button1.Location = new Point(143, 9);
+            button1.Name = "button1";
+            button1.Size = new Size(137, 35);
+            button1.TabIndex = 7;
+            button1.Text = "Remove Product";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("SimSun-ExtB", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(286, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(210, 13);
+            label1.TabIndex = 8;
+            label1.Text = "*double click to edit product";
+            // 
+            // Search
+            // 
+            Search.Location = new Point(513, 17);
+            Search.Name = "Search";
+            Search.PlaceholderText = "Search";
+            Search.Size = new Size(210, 27);
+            Search.TabIndex = 9;
+            Search.TextChanged += textBox1_TextChanged;
+            // 
             // ProductPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;
             ClientSize = new Size(744, 479);
+            Controls.Add(Search);
+            Controls.Add(label1);
+            Controls.Add(button1);
             Controls.Add(AddProduct);
             Controls.Add(ProductList);
             Name = "ProductPage";
@@ -127,6 +164,7 @@
             ((System.ComponentModel.ISupportInitialize)ProductList).EndInit();
             ((System.ComponentModel.ISupportInitialize)productBindingSource).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -138,5 +176,8 @@
         private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn stockDataGridViewTextBoxColumn;
+        private Button button1;
+        private Label label1;
+        private TextBox Search;
     }
 }

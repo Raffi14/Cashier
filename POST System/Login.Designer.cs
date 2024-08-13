@@ -32,6 +32,7 @@
             button1 = new Button();
             username = new TextBox();
             password = new TextBox();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // label1
@@ -67,9 +68,21 @@
             password.BackColor = SystemColors.Window;
             password.Location = new Point(49, 192);
             password.Name = "password";
+            password.PasswordChar = '*';
             password.PlaceholderText = "password";
             password.Size = new Size(330, 27);
             password.TabIndex = 3;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(49, 225);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(134, 24);
+            checkBox1.TabIndex = 4;
+            checkBox1.Text = "Show password";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // Login
             // 
@@ -77,6 +90,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(434, 376);
+            Controls.Add(checkBox1);
             Controls.Add(password);
             Controls.Add(username);
             Controls.Add(button1);
@@ -97,5 +111,6 @@
         private Button button1;
         private TextBox username;
         private TextBox password;
+        private CheckBox checkBox1;
     }
 }
