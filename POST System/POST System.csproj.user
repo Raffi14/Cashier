@@ -10,6 +10,9 @@
     <Compile Update="AdminPages\Components\AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AdminPages\Petugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="AdminPages\ProductPage.cs">
       <SubType>Form</SubType>
     </Compile>

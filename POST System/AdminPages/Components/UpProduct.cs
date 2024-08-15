@@ -25,9 +25,9 @@ namespace POST_System.AdminPages.Components
         private void UpProduct_Load(object sender, EventArgs e)
         {
             product = Program.db.Products.FirstOrDefault(v => v.Id.ToString() == IdProduct);
-            EdName.Text = product.Name;
-            EdPrice.Text = product.Price.ToString();
-            EdStock.Text = product.Stock.ToString();
+            EdName.Text = product.Nama;
+            EdPrice.Text = product.Harga.ToString();
+            EdStock.Text = product.Stok.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,9 +35,9 @@ namespace POST_System.AdminPages.Components
             DialogResult result = MessageBox.Show("Are you sure you?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (result == DialogResult.Yes)
             {
-                product.Name = EdName.Text;
-                product.Price = Convert.ToInt32(EdPrice.Text);
-                product.Stock = Convert.ToInt32(EdStock.Text);
+                product.Nama = EdName.Text;
+                product.Harga = Convert.ToInt32(EdPrice.Text);
+                product.Stok = Convert.ToInt32(EdStock.Text);
 
                 Program.db.SaveChanges();
                 ProductPage.RefreshData();

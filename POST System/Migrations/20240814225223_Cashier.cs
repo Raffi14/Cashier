@@ -13,29 +13,14 @@ namespace POST_System.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Customers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Nama = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Alamat = table.Column<string>(type: "varchar(150)", nullable: false),
-                    NoTelp = table.Column<string>(type: "varchar(50)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Customers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Price = table.Column<int>(type: "int", nullable: false),
-                    Stock = table.Column<int>(type: "int", nullable: false)
+                    Nama = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Harga = table.Column<int>(type: "int", nullable: false),
+                    Stok = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -48,10 +33,10 @@ namespace POST_System.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    User_Type = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Name = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Address = table.Column<string>(type: "varchar(150)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Tipe_User = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Nama = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Alamat = table.Column<string>(type: "varchar(150)", nullable: false),
+                    NoTelp = table.Column<string>(type: "varchar(50)", nullable: false),
                     Username = table.Column<string>(type: "varchar(50)", nullable: false),
                     Password = table.Column<string>(type: "varchar(50)", nullable: false)
                 },
@@ -66,17 +51,17 @@ namespace POST_System.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    SaleDate = table.Column<DateTime>(type: "date", nullable: false),
-                    TotalPrice = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
-                    CustomerId = table.Column<int>(type: "integer", nullable: false)
+                    Tanggal = table.Column<DateTime>(type: "date", nullable: false),
+                    TotalHarga = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
+                    UserId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Sales", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Sales_Customers_CustomerId",
-                        column: x => x.CustomerId,
-                        principalTable: "Customers",
+                        name: "FK_Sales_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -87,54 +72,42 @@ namespace POST_System.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ProductId = table.Column<int>(type: "integer", nullable: false),
-                    SaleId = table.Column<int>(type: "integer", nullable: false),
-                    Quantity = table.Column<int>(type: "int", nullable: false),
-                    SubTotalPrice = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
-                    UserId = table.Column<int>(type: "integer", nullable: false)
+                    ProdukId = table.Column<int>(type: "integer", nullable: false),
+                    PenjualamId = table.Column<int>(type: "integer", nullable: false),
+                    Kuantitas = table.Column<int>(type: "int", nullable: false),
+                    SubTotal = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_SaleDetails", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SaleDetails_Products_ProductId",
-                        column: x => x.ProductId,
+                        name: "FK_SaleDetails_Products_ProdukId",
+                        column: x => x.ProdukId,
                         principalTable: "Products",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SaleDetails_Sales_SaleId",
-                        column: x => x.SaleId,
+                        name: "FK_SaleDetails_Sales_PenjualamId",
+                        column: x => x.PenjualamId,
                         principalTable: "Sales",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_SaleDetails_Users_UserId",
-                        column: x => x.UserId,
-                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_SaleDetails_ProductId",
+                name: "IX_SaleDetails_PenjualamId",
                 table: "SaleDetails",
-                column: "ProductId");
+                column: "PenjualamId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SaleDetails_SaleId",
+                name: "IX_SaleDetails_ProdukId",
                 table: "SaleDetails",
-                column: "SaleId");
+                column: "ProdukId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SaleDetails_UserId",
-                table: "SaleDetails",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Sales_CustomerId",
+                name: "IX_Sales_UserId",
                 table: "Sales",
-                column: "CustomerId");
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -151,9 +124,6 @@ namespace POST_System.Migrations
 
             migrationBuilder.DropTable(
                 name: "Users");
-
-            migrationBuilder.DropTable(
-                name: "Customers");
         }
     }
 }

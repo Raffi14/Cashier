@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             productBindingSource = new BindingSource(components);
             panel1 = new Panel();
+            button1 = new Button();
             Username = new Label();
             Staff = new Button();
             TransactionNav = new Button();
@@ -48,6 +49,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Gray;
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(Username);
             panel1.Controls.Add(Staff);
             panel1.Controls.Add(TransactionNav);
@@ -58,10 +60,20 @@
             panel1.Size = new Size(132, 515);
             panel1.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Gray;
+            button1.Location = new Point(11, 279);
+            button1.Name = "button1";
+            button1.Size = new Size(107, 58);
+            button1.TabIndex = 4;
+            button1.Text = "Riwayat Transaksi";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Username
             // 
             Username.AutoSize = true;
-            Username.Location = new Point(28, 46);
+            Username.Location = new Point(28, 28);
             Username.Name = "Username";
             Username.Size = new Size(75, 20);
             Username.TabIndex = 2;
@@ -70,21 +82,22 @@
             // Staff
             // 
             Staff.BackColor = Color.Gray;
-            Staff.Location = new Point(11, 234);
+            Staff.Location = new Point(11, 151);
             Staff.Name = "Staff";
             Staff.Size = new Size(107, 58);
             Staff.TabIndex = 3;
-            Staff.Text = "Staff";
+            Staff.Text = "Petugas";
             Staff.UseVisualStyleBackColor = false;
+            Staff.Click += Staff_Click;
             // 
             // TransactionNav
             // 
             TransactionNav.BackColor = Color.Gray;
-            TransactionNav.Location = new Point(11, 161);
+            TransactionNav.Location = new Point(11, 215);
             TransactionNav.Name = "TransactionNav";
             TransactionNav.Size = new Size(107, 58);
             TransactionNav.TabIndex = 2;
-            TransactionNav.Text = "Transaction";
+            TransactionNav.Text = "Transaksi";
             TransactionNav.UseVisualStyleBackColor = false;
             TransactionNav.Click += TransactionNav_Click;
             // 
@@ -95,18 +108,18 @@
             ProductNav.Name = "ProductNav";
             ProductNav.Size = new Size(107, 58);
             ProductNav.TabIndex = 1;
-            ProductNav.Text = "Product";
+            ProductNav.Text = "Produk";
             ProductNav.UseVisualStyleBackColor = false;
             ProductNav.Click += button2_Click;
             // 
             // LogOutButton
             // 
             LogOutButton.BackColor = Color.Gray;
-            LogOutButton.Location = new Point(28, 462);
+            LogOutButton.Location = new Point(28, 457);
             LogOutButton.Name = "LogOutButton";
-            LogOutButton.Size = new Size(72, 28);
+            LogOutButton.Size = new Size(72, 33);
             LogOutButton.TabIndex = 0;
-            LogOutButton.Text = "Log-Out";
+            LogOutButton.Text = "Log out";
             LogOutButton.UseVisualStyleBackColor = false;
             LogOutButton.Click += button1_Click;
             // 
@@ -150,5 +163,6 @@
         private Button ProductNav;
         private Label Username;
         private GroupBox productBox;
+        private Button button1;
     }
 }

@@ -64,6 +64,25 @@ namespace POST_System
                 Staff.BackColor = Color.Gray;
             }
         }
+
+        private void Staff_Click(object sender, EventArgs e)
+        {
+            isActive = "dataPetugas";
+            if (isActive == "dataPetugas")
+            {
+                Petugas petugas = new Petugas();
+                petugas.TopLevel = false;
+                petugas.Dock = DockStyle.Fill;
+                petugas.FormBorderStyle = FormBorderStyle.None;
+                productBox.Controls.Clear();
+                productBox.Controls.Add(petugas);
+                productBox.Text = "Petuga";
+                petugas.Show();
+                ProductNav.BackColor = Color.Gray;
+                TransactionNav.BackColor = Color.Gray;
+                Staff.BackColor = Color.Transparent;
+            }
+        }
     }
 
 

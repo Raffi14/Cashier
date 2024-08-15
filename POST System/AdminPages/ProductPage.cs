@@ -39,6 +39,7 @@ namespace POST_System.AdminPages
                 UpProduct Update = new UpProduct(this);
                 Update.IdProduct = IdProduct;
                 Update.ShowDialog();
+                IdProduct = string.Empty;
             }
         }
 
@@ -68,6 +69,10 @@ namespace POST_System.AdminPages
                     Program.db.SaveChanges();
                     RefreshData();
                 }
+                else if (result == DialogResult.No)
+                {
+                    IdProduct = string.Empty;
+                }
             }
         }
 
@@ -77,7 +82,7 @@ namespace POST_System.AdminPages
 
             if(searchText.Length > 0)
             {
-                productBindingSource.DataSource = Program.db.Products.Where(v => v.Name.Contains(searchText)).OrderBy(v => v.Name).ToList();
+                productBindingSource.DataSource = Program.db.Products.Where(v => v.Nama.Contains(searchText)).OrderBy(v => v.Nama).ToList();
             }
             else
             {

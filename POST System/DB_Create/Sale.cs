@@ -10,9 +10,9 @@ namespace POST_System.DB_Create
     public class Sale
     {
         public int Id { get; set; }
-        public DateTime SaleDate { get; set; }
-        public decimal TotalPrice { get; set; }
-        public Customer Customer { get; set; }
+        public DateTime Tanggal { get; set; }
+        public decimal TotalHarga { get; set; }
+        public User_account User { get; set; }
 
         public static void CreateModel(ModelBuilder model)
         {
@@ -20,9 +20,9 @@ namespace POST_System.DB_Create
             {
                 e.HasKey(e => e.Id);
                 e.Property(e => e.Id).ValueGeneratedOnAdd();
-                e.Property(e => e.SaleDate).HasColumnType("date").IsRequired();
-                e.Property(e => e.TotalPrice).HasColumnType("decimal(10,2)").IsRequired();
-                e.HasOne(e => e.Customer);
+                e.Property(e => e.Tanggal).HasColumnType("date").IsRequired();
+                e.Property(e => e.TotalHarga).HasColumnType("decimal(10,2)").IsRequired();
+                e.HasOne(e => e.User);
             });
         }
     }

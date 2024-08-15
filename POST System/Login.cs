@@ -30,11 +30,11 @@ namespace POST_System
 
             if (user != null)
             {
-                switch (user.User_Type)
+                switch (user.Tipe_User)
                 {
                     case "admin":
                         MainPage HomePage = new MainPage();
-                        HomePage.username = user.User_Type;
+                        HomePage.username = user.Tipe_User;
                         HomePage.Show();
                         this.Hide();
                         break;

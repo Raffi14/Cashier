@@ -38,12 +38,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(35, 18);
+            label1.Font = new Font("Stencil", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 29);
             label1.Name = "label1";
-            label1.Size = new Size(142, 60);
+            label1.Size = new Size(343, 47);
             label1.TabIndex = 0;
-            label1.Text = "Login";
+            label1.Text = "Aplikasi Kasir";
             // 
             // button1
             // 
@@ -51,7 +51,7 @@
             button1.Name = "button1";
             button1.Size = new Size(125, 38);
             button1.TabIndex = 1;
-            button1.Text = "Log-IN";
+            button1.Text = "Log in";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -78,9 +78,9 @@
             checkBox1.AutoSize = true;
             checkBox1.Location = new Point(49, 225);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(134, 24);
+            checkBox1.Size = new Size(164, 24);
             checkBox1.TabIndex = 4;
-            checkBox1.Text = "Show password";
+            checkBox1.Text = "tampilkan password";
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 

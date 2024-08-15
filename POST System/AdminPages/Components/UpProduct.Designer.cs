@@ -51,9 +51,9 @@
             ProductTitle.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ProductTitle.Location = new Point(77, 38);
             ProductTitle.Name = "ProductTitle";
-            ProductTitle.Size = new Size(281, 60);
+            ProductTitle.Size = new Size(268, 60);
             ProductTitle.TabIndex = 9;
-            ProductTitle.Text = "Edit Product";
+            ProductTitle.Text = "Edit Produk";
             ProductTitle.Click += ProductTitle_Click;
             // 
             // EdPrice

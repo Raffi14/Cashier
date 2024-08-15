@@ -22,7 +22,83 @@ namespace POST_System.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("POST_System.DB_Create.Customer", b =>
+            modelBuilder.Entity("POST_System.DB_Create.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Harga")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nama")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<int>("Stok")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("POST_System.DB_Create.Sale", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Tanggal")
+                        .HasColumnType("date");
+
+                    b.Property<decimal>("TotalHarga")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Sales");
+                });
+
+            modelBuilder.Entity("POST_System.DB_Create.SaleDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Kuantitas")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PenjualamId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ProdukId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("SubTotal")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PenjualamId");
+
+                    b.HasIndex("ProdukId");
+
+                    b.ToTable("SaleDetails");
+                });
+
+            modelBuilder.Entity("POST_System.DB_Create.User_account", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,117 +118,11 @@ namespace POST_System.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(50)");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("POST_System.DB_Create.Product", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("POST_System.DB_Create.Sale", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("SaleDate")
-                        .HasColumnType("date");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(10,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Sales");
-                });
-
-            modelBuilder.Entity("POST_System.DB_Create.SaleDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SaleId")
-                        .HasColumnType("integer");
-
-                    b.Property<decimal>("SubTotalPrice")
-                        .HasColumnType("decimal(10,2)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("SaleId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("SaleDetails");
-                });
-
-            modelBuilder.Entity("POST_System.DB_Create.User_account", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("varchar(150)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("varchar(50)");
-
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("varchar(50)");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("User_Type")
+                    b.Property<string>("Tipe_User")
                         .IsRequired()
                         .HasColumnType("varchar(50)");
 
@@ -167,40 +137,32 @@ namespace POST_System.Migrations
 
             modelBuilder.Entity("POST_System.DB_Create.Sale", b =>
                 {
-                    b.HasOne("POST_System.DB_Create.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("POST_System.DB_Create.SaleDetail", b =>
-                {
-                    b.HasOne("POST_System.DB_Create.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("POST_System.DB_Create.Sale", "Sale")
-                        .WithMany()
-                        .HasForeignKey("SaleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("POST_System.DB_Create.User_account", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Product");
-
-                    b.Navigation("Sale");
-
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("POST_System.DB_Create.SaleDetail", b =>
+                {
+                    b.HasOne("POST_System.DB_Create.Sale", "Penjualam")
+                        .WithMany()
+                        .HasForeignKey("PenjualamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("POST_System.DB_Create.Product", "Produk")
+                        .WithMany()
+                        .HasForeignKey("ProdukId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Penjualam");
+
+                    b.Navigation("Produk");
                 });
 #pragma warning restore 612, 618
         }

@@ -32,9 +32,9 @@
             AddProduct = new Button();
             ProductList = new DataGridView();
             Id = new DataGridViewTextBoxColumn();
-            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            priceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            stockDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            namaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            hargaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            stokDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             productBindingSource = new BindingSource(components);
             button1 = new Button();
             label1 = new Label();
@@ -46,11 +46,11 @@
             // AddProduct
             // 
             AddProduct.BackColor = Color.LightGray;
-            AddProduct.Location = new Point(0, 9);
+            AddProduct.Location = new Point(0, 12);
             AddProduct.Name = "AddProduct";
             AddProduct.Size = new Size(137, 35);
             AddProduct.TabIndex = 6;
-            AddProduct.Text = "Add Product";
+            AddProduct.Text = "Tambah Produk";
             AddProduct.UseVisualStyleBackColor = false;
             AddProduct.Click += AddProduct_Click;
             // 
@@ -64,16 +64,16 @@
             ProductList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             ProductList.BackgroundColor = Color.Silver;
             ProductList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ProductList.Columns.AddRange(new DataGridViewColumn[] { Id, nameDataGridViewTextBoxColumn, priceDataGridViewTextBoxColumn, stockDataGridViewTextBoxColumn });
+            ProductList.Columns.AddRange(new DataGridViewColumn[] { Id, namaDataGridViewTextBoxColumn, hargaDataGridViewTextBoxColumn, stokDataGridViewTextBoxColumn });
             ProductList.DataSource = productBindingSource;
             ProductList.ImeMode = ImeMode.NoControl;
-            ProductList.Location = new Point(0, 50);
+            ProductList.Location = new Point(0, 72);
             ProductList.Name = "ProductList";
             ProductList.ReadOnly = true;
             ProductList.RowHeadersVisible = false;
             ProductList.RowHeadersWidth = 51;
             ProductList.ScrollBars = ScrollBars.Vertical;
-            ProductList.Size = new Size(744, 452);
+            ProductList.Size = new Size(744, 430);
             ProductList.TabIndex = 5;
             ProductList.CellClick += ProductList_Click;
             ProductList.CellDoubleClick += ProductList_CellClick;
@@ -87,32 +87,32 @@
             Id.Name = "Id";
             Id.ReadOnly = true;
             // 
-            // nameDataGridViewTextBoxColumn
+            // namaDataGridViewTextBoxColumn
             // 
-            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            nameDataGridViewTextBoxColumn.FillWeight = 125.4902F;
-            nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            nameDataGridViewTextBoxColumn.ReadOnly = true;
+            namaDataGridViewTextBoxColumn.DataPropertyName = "Nama";
+            namaDataGridViewTextBoxColumn.FillWeight = 125.490181F;
+            namaDataGridViewTextBoxColumn.HeaderText = "Nama";
+            namaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            namaDataGridViewTextBoxColumn.Name = "namaDataGridViewTextBoxColumn";
+            namaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // priceDataGridViewTextBoxColumn
+            // hargaDataGridViewTextBoxColumn
             // 
-            priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            priceDataGridViewTextBoxColumn.FillWeight = 125.4902F;
-            priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            priceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            priceDataGridViewTextBoxColumn.ReadOnly = true;
+            hargaDataGridViewTextBoxColumn.DataPropertyName = "Harga";
+            hargaDataGridViewTextBoxColumn.FillWeight = 125.490181F;
+            hargaDataGridViewTextBoxColumn.HeaderText = "Harga";
+            hargaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            hargaDataGridViewTextBoxColumn.Name = "hargaDataGridViewTextBoxColumn";
+            hargaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // stockDataGridViewTextBoxColumn
+            // stokDataGridViewTextBoxColumn
             // 
-            stockDataGridViewTextBoxColumn.DataPropertyName = "Stock";
-            stockDataGridViewTextBoxColumn.FillWeight = 125.4902F;
-            stockDataGridViewTextBoxColumn.HeaderText = "Stock";
-            stockDataGridViewTextBoxColumn.MinimumWidth = 6;
-            stockDataGridViewTextBoxColumn.Name = "stockDataGridViewTextBoxColumn";
-            stockDataGridViewTextBoxColumn.ReadOnly = true;
+            stokDataGridViewTextBoxColumn.DataPropertyName = "Stok";
+            stokDataGridViewTextBoxColumn.FillWeight = 125.490181F;
+            stokDataGridViewTextBoxColumn.HeaderText = "Stok";
+            stokDataGridViewTextBoxColumn.MinimumWidth = 6;
+            stokDataGridViewTextBoxColumn.Name = "stokDataGridViewTextBoxColumn";
+            stokDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // productBindingSource
             // 
@@ -121,23 +121,23 @@
             // button1
             // 
             button1.BackColor = Color.LightGray;
-            button1.Location = new Point(143, 9);
+            button1.Location = new Point(143, 12);
             button1.Name = "button1";
             button1.Size = new Size(137, 35);
             button1.TabIndex = 7;
-            button1.Text = "Remove Product";
+            button1.Text = "Hapus Produk";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("SimSun-ExtB", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(286, 34);
+            label1.Font = new Font("SimSun-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 56);
             label1.Name = "label1";
-            label1.Size = new Size(210, 13);
+            label1.Size = new Size(592, 15);
             label1.TabIndex = 8;
-            label1.Text = "*double click to edit product";
+            label1.Text = "*click untuk memilih produk dan double click untuk update produk ";
             // 
             // Search
             // 
@@ -171,13 +171,16 @@
 
         private Button AddProduct;
         private DataGridView ProductList;
-        private BindingSource productBindingSource;
-        private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn stockDataGridViewTextBoxColumn;
         private Button button1;
         private Label label1;
         private TextBox Search;
+        private BindingSource productBindingSource;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn namaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn hargaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn stokDataGridViewTextBoxColumn;
     }
 }

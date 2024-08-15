@@ -63,11 +63,11 @@
             // 
             ProductTitle.AutoSize = true;
             ProductTitle.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ProductTitle.Location = new Point(64, 23);
+            ProductTitle.Location = new Point(34, 21);
             ProductTitle.Name = "ProductTitle";
-            ProductTitle.Size = new Size(286, 60);
+            ProductTitle.Size = new Size(351, 60);
             ProductTitle.TabIndex = 4;
-            ProductTitle.Text = "Add Product";
+            ProductTitle.Text = "Tambah Produk";
             // 
             // button1
             // 

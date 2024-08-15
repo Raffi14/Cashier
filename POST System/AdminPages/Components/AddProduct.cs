@@ -35,9 +35,9 @@ namespace POST_System.AdminPages
             {
                 DB_Create.Product product = new DB_Create.Product
                 {
-                    Name = InpName.Text,
-                    Price = Convert.ToDecimal(InpPrice.Text),
-                    Stock = Convert.ToInt32(InpStock.Text)
+                    Nama = InpName.Text,
+                    Harga = Convert.ToInt32(InpPrice.Text),
+                    Stok = Convert.ToInt32(InpStock.Text)
                 };
                 Program.db.Products.Add(product);
                 Program.db.SaveChanges();
