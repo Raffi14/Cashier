@@ -68,6 +68,7 @@ namespace POST_System.AdminPages
                     Program.db.Products.Remove(ProductId);
                     Program.db.SaveChanges();
                     RefreshData();
+                    IdProduct = string.Empty;
                 }
                 else if (result == DialogResult.No)
                 {

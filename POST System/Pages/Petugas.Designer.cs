@@ -34,14 +34,14 @@
             button1 = new Button();
             AddProduct = new Button();
             PetugasList = new DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            tipeUserDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            namaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            alamatDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            noTelpDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            usernameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            passwordDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             useraccountBindingSource = new BindingSource(components);
+            IdPetugas = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)PetugasList).BeginInit();
             ((System.ComponentModel.ISupportInitialize)useraccountBindingSource).BeginInit();
             SuspendLayout();
@@ -73,6 +73,7 @@
             button1.TabIndex = 12;
             button1.Text = "Hapus Petugas";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // AddProduct
             // 
@@ -83,6 +84,7 @@
             AddProduct.TabIndex = 11;
             AddProduct.Text = "Tambah Petugas";
             AddProduct.UseVisualStyleBackColor = false;
+            AddProduct.Click += AddProduct_Click;
             // 
             // PetugasList
             // 
@@ -94,7 +96,7 @@
             PetugasList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             PetugasList.BackgroundColor = Color.Silver;
             PetugasList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PetugasList.Columns.AddRange(new DataGridViewColumn[] { Id, tipeUserDataGridViewTextBoxColumn, namaDataGridViewTextBoxColumn, alamatDataGridViewTextBoxColumn, noTelpDataGridViewTextBoxColumn, usernameDataGridViewTextBoxColumn, passwordDataGridViewTextBoxColumn });
+            PetugasList.Columns.AddRange(new DataGridViewColumn[] { IdPetugas, dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6 });
             PetugasList.DataSource = useraccountBindingSource;
             PetugasList.ImeMode = ImeMode.NoControl;
             PetugasList.Location = new Point(0, 72);
@@ -105,73 +107,74 @@
             PetugasList.ScrollBars = ScrollBars.Vertical;
             PetugasList.Size = new Size(744, 430);
             PetugasList.TabIndex = 10;
-            // 
-            // Id
-            // 
-            Id.DataPropertyName = "Id";
-            Id.FillWeight = 41.17647F;
-            Id.HeaderText = "Id";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            // 
-            // tipeUserDataGridViewTextBoxColumn
-            // 
-            tipeUserDataGridViewTextBoxColumn.DataPropertyName = "Tipe_User";
-            tipeUserDataGridViewTextBoxColumn.FillWeight = 109.803917F;
-            tipeUserDataGridViewTextBoxColumn.HeaderText = "Tipe_User";
-            tipeUserDataGridViewTextBoxColumn.MinimumWidth = 6;
-            tipeUserDataGridViewTextBoxColumn.Name = "tipeUserDataGridViewTextBoxColumn";
-            tipeUserDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // namaDataGridViewTextBoxColumn
-            // 
-            namaDataGridViewTextBoxColumn.DataPropertyName = "Nama";
-            namaDataGridViewTextBoxColumn.FillWeight = 109.803917F;
-            namaDataGridViewTextBoxColumn.HeaderText = "Nama";
-            namaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            namaDataGridViewTextBoxColumn.Name = "namaDataGridViewTextBoxColumn";
-            namaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // alamatDataGridViewTextBoxColumn
-            // 
-            alamatDataGridViewTextBoxColumn.DataPropertyName = "Alamat";
-            alamatDataGridViewTextBoxColumn.FillWeight = 109.803917F;
-            alamatDataGridViewTextBoxColumn.HeaderText = "Alamat";
-            alamatDataGridViewTextBoxColumn.MinimumWidth = 6;
-            alamatDataGridViewTextBoxColumn.Name = "alamatDataGridViewTextBoxColumn";
-            alamatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // noTelpDataGridViewTextBoxColumn
-            // 
-            noTelpDataGridViewTextBoxColumn.DataPropertyName = "NoTelp";
-            noTelpDataGridViewTextBoxColumn.FillWeight = 109.803917F;
-            noTelpDataGridViewTextBoxColumn.HeaderText = "NoTelp";
-            noTelpDataGridViewTextBoxColumn.MinimumWidth = 6;
-            noTelpDataGridViewTextBoxColumn.Name = "noTelpDataGridViewTextBoxColumn";
-            noTelpDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
-            usernameDataGridViewTextBoxColumn.FillWeight = 109.803917F;
-            usernameDataGridViewTextBoxColumn.HeaderText = "Username";
-            usernameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            usernameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            passwordDataGridViewTextBoxColumn.FillWeight = 109.803917F;
-            passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
-            passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            passwordDataGridViewTextBoxColumn.ReadOnly = true;
+            PetugasList.CellClick += PetugasList_Click;
             // 
             // useraccountBindingSource
             // 
             useraccountBindingSource.DataSource = typeof(DB_Create.User_account);
+            // 
+            // IdPetugas
+            // 
+            IdPetugas.DataPropertyName = "Id";
+            IdPetugas.FillWeight = 41.17647F;
+            IdPetugas.HeaderText = "Id";
+            IdPetugas.MinimumWidth = 6;
+            IdPetugas.Name = "IdPetugas";
+            IdPetugas.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "Tipe_User";
+            dataGridViewTextBoxColumn1.FillWeight = 109.803917F;
+            dataGridViewTextBoxColumn1.HeaderText = "Tipe_User";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.DataPropertyName = "Nama";
+            dataGridViewTextBoxColumn2.FillWeight = 109.803917F;
+            dataGridViewTextBoxColumn2.HeaderText = "Nama";
+            dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.DataPropertyName = "Alamat";
+            dataGridViewTextBoxColumn3.FillWeight = 109.803917F;
+            dataGridViewTextBoxColumn3.HeaderText = "Alamat";
+            dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.DataPropertyName = "NoTelp";
+            dataGridViewTextBoxColumn4.FillWeight = 109.803917F;
+            dataGridViewTextBoxColumn4.HeaderText = "NoTelp";
+            dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewTextBoxColumn5.DataPropertyName = "Username";
+            dataGridViewTextBoxColumn5.FillWeight = 109.803917F;
+            dataGridViewTextBoxColumn5.HeaderText = "Username";
+            dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewTextBoxColumn6.DataPropertyName = "Password";
+            dataGridViewTextBoxColumn6.FillWeight = 109.803917F;
+            dataGridViewTextBoxColumn6.HeaderText = "Password";
+            dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // Petugas
             // 
@@ -206,6 +209,14 @@
         private DataGridViewTextBoxColumn noTelpDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Id_Petugas;
         private BindingSource useraccountBindingSource;
+        private DataGridViewTextBoxColumn IdPetugas;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
     }
 }

@@ -14,12 +14,13 @@ namespace POST_System
 {
     public partial class MainPage : Form
     {
-        public string username { get; set; }
+        public User_account User;
         public string isActive;
 
-        public MainPage()
+        public MainPage(User_account user)
         {
             InitializeComponent();
+            this.User = user;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,7 +31,21 @@ namespace POST_System
 
         private void AdminHome_Load(object sender, EventArgs e)
         {
-            Username.Text = this.username;
+            Username.Text = User.Username;
+
+            switch (User.Tipe_User)
+            {
+                case "admin":
+                    TransactionNav.Visible = false;
+                    Riwayat.Location = new System.Drawing.Point(11, 215);
+                    break;
+                case "petugas":
+                    ProductNav.Visible = false;
+                    Staff.Visible = false;
+                    TransactionNav.Location = new System.Drawing.Point(11, 87);
+                    Riwayat.Location = new System.Drawing.Point(11, 151);
+                    break;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -44,11 +59,12 @@ namespace POST_System
                 product.FormBorderStyle = FormBorderStyle.None;
                 productBox.Controls.Clear();
                 productBox.Controls.Add(product);
-                productBox.Text = "Product";
+                productBox.Text = "Data Produk";
                 product.Show();
                 ProductNav.BackColor = Color.Transparent;
                 TransactionNav.BackColor = Color.Gray;
                 Staff.BackColor = Color.Gray;
+                Riwayat.BackColor = Color.Gray;
             }
         }
 
@@ -58,10 +74,11 @@ namespace POST_System
             if (isActive == "dataTransaction")
             {
                 productBox.Controls.Clear();
-                productBox.Text = "Transaction";
+                productBox.Text = "Transaksi";
                 TransactionNav.BackColor = Color.Transparent;
                 ProductNav.BackColor = Color.Gray;
                 Staff.BackColor = Color.Gray;
+                Riwayat.BackColor = Color.Gray;
             }
         }
 
@@ -76,11 +93,26 @@ namespace POST_System
                 petugas.FormBorderStyle = FormBorderStyle.None;
                 productBox.Controls.Clear();
                 productBox.Controls.Add(petugas);
-                productBox.Text = "Petuga";
+                productBox.Text = "Data Petugas";
                 petugas.Show();
                 ProductNav.BackColor = Color.Gray;
                 TransactionNav.BackColor = Color.Gray;
                 Staff.BackColor = Color.Transparent;
+                Riwayat.BackColor = Color.Gray;
+            }
+        }
+
+        private void Riwayat_Click(object sender, EventArgs e)
+        {
+            isActive = "Riwayat";
+            if (isActive == "Riwayat")
+            {
+                productBox.Controls.Clear();
+                productBox.Text = "Riwayat Transaksi";
+                TransactionNav.BackColor = Color.Gray;
+                ProductNav.BackColor = Color.Gray;
+                Staff.BackColor = Color.Gray;
+                Riwayat.BackColor = Color.Transparent;
             }
         }
     }

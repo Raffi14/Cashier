@@ -31,7 +31,7 @@
             components = new System.ComponentModel.Container();
             productBindingSource = new BindingSource(components);
             panel1 = new Panel();
-            button1 = new Button();
+            Riwayat = new Button();
             Username = new Label();
             Staff = new Button();
             TransactionNav = new Button();
@@ -49,7 +49,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Gray;
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(Riwayat);
             panel1.Controls.Add(Username);
             panel1.Controls.Add(Staff);
             panel1.Controls.Add(TransactionNav);
@@ -60,15 +60,16 @@
             panel1.Size = new Size(132, 515);
             panel1.TabIndex = 0;
             // 
-            // button1
+            // Riwayat
             // 
-            button1.BackColor = Color.Gray;
-            button1.Location = new Point(11, 279);
-            button1.Name = "button1";
-            button1.Size = new Size(107, 58);
-            button1.TabIndex = 4;
-            button1.Text = "Riwayat Transaksi";
-            button1.UseVisualStyleBackColor = false;
+            Riwayat.BackColor = Color.Gray;
+            Riwayat.Location = new Point(11, 279);
+            Riwayat.Name = "Riwayat";
+            Riwayat.Size = new Size(107, 58);
+            Riwayat.TabIndex = 4;
+            Riwayat.Text = "Riwayat Transaksi";
+            Riwayat.UseVisualStyleBackColor = false;
+            Riwayat.Click += Riwayat_Click;
             // 
             // Username
             // 
@@ -163,6 +164,6 @@
         private Button ProductNav;
         private Label Username;
         private GroupBox productBox;
-        private Button button1;
+        private Button Riwayat;
     }
 }
