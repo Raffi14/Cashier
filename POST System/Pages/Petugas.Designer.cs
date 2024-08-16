@@ -34,7 +34,6 @@
             button1 = new Button();
             AddProduct = new Button();
             PetugasList = new DataGridView();
-            useraccountBindingSource = new BindingSource(components);
             IdPetugas = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
@@ -42,6 +41,7 @@
             dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            useraccountBindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)PetugasList).BeginInit();
             ((System.ComponentModel.ISupportInitialize)useraccountBindingSource).BeginInit();
             SuspendLayout();
@@ -108,10 +108,7 @@
             PetugasList.Size = new Size(744, 430);
             PetugasList.TabIndex = 10;
             PetugasList.CellClick += PetugasList_Click;
-            // 
-            // useraccountBindingSource
-            // 
-            useraccountBindingSource.DataSource = typeof(DB_Create.User_account);
+            PetugasList.CellDoubleClick += PetugasList_CellDoubleClick;
             // 
             // IdPetugas
             // 
@@ -175,6 +172,10 @@
             dataGridViewTextBoxColumn6.MinimumWidth = 6;
             dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // useraccountBindingSource
+            // 
+            useraccountBindingSource.DataSource = typeof(DB_Create.User_account);
             // 
             // Petugas
             // 

@@ -1,4 +1,5 @@
-﻿using POST_System.Pages.Components;
+﻿using POST_System.AdminPages.Components;
+using POST_System.Pages.Components;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,6 +61,19 @@ namespace POST_System.AdminPages
                 {
                     Id_petugas = string.Empty;
                 }
+            }
+        }
+
+        private void PetugasList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            PetugasList.CurrentRow.Selected = true;
+
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                UpPetugas petugas = new UpPetugas(this);
+                petugas.IdPetugas = Id_petugas;
+                petugas.ShowDialog();
+                Id_petugas = string.Empty;
             }
         }
     }

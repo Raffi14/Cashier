@@ -44,10 +44,5 @@ namespace POST_System.AdminPages.Components
                 this.Close();
             }
         }
-
-        private void ProductTitle_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

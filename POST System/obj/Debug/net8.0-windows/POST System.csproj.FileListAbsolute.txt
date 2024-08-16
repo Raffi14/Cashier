@@ -105,3 +105,4 @@ C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\PO
 C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST_System.AdminPages.Components.UpProduct.resources
 C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST_System.AdminPages.Petugas.resources
 C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST_System.Pages.Components.AddPetugas.resources
+C:\Users\LENOVO\source\repos\POST System\POST System\obj\Debug\net8.0-windows\POST_System.Pages.Components.UpPetugas.resources
