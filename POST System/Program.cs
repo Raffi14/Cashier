@@ -1,3 +1,5 @@
+using POST_System.Pages;
+
 namespace POST_System
 {
     internal static class Program

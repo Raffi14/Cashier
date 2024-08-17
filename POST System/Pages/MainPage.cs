@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using POST_System.AdminPages;
 using POST_System.DB_Create;
+using POST_System.Pages;
 
 namespace POST_System
 {
@@ -73,8 +74,14 @@ namespace POST_System
             isActive = "dataTransaction";
             if (isActive == "dataTransaction")
             {
+                Transaction transaction = new Transaction();
+                transaction.TopLevel = false;
+                transaction.Dock = DockStyle.Fill;
+                transaction.FormBorderStyle = FormBorderStyle.None;
                 productBox.Controls.Clear();
+                productBox.Controls.Add(transaction);
                 productBox.Text = "Transaksi";
+                transaction.Show();
                 TransactionNav.BackColor = Color.Transparent;
                 ProductNav.BackColor = Color.Gray;
                 Staff.BackColor = Color.Gray;

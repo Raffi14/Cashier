@@ -2306,9 +2306,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\POST System.csproj",
-      "projectName": "POST System",
-      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\POST System.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\App_Cashier.csproj",
+      "projectName": "App_Cashier",
+      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\App_Cashier.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\LENOVO\\source\\repos\\POST System\\POST System\\obj\\",
       "projectStyle": "PackageReference",
@@ -2381,13 +2381,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  }
 }
