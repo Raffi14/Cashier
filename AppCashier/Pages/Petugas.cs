@@ -76,5 +76,19 @@ namespace POST_System.AdminPages
                 Id_petugas = string.Empty;
             }
         }
+
+        private void Search_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = Search.Text.ToLower();
+
+            if (searchText.Length > 0)
+            {
+                useraccountBindingSource.DataSource = Program.db.Products.Where(v => v.Nama.ToLower().Contains(searchText)).OrderBy(v => v.Nama).ToList();
+            }
+            else
+            {
+                RefreshUser();
+            }
+        }
     }
 }

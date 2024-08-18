@@ -12,7 +12,7 @@ namespace POST_System.DB_Create
     {
         public int Id { get; set; }
         public Product Produk { get; set; }
-        public Sale Penjualam { get; set; }
+        public Sale Penjualan { get; set; }
         public int Kuantitas { get; set; }
         public int SubTotal { get; set; }
 
@@ -25,7 +25,7 @@ namespace POST_System.DB_Create
                 e.Property(e => e.Kuantitas).HasColumnType("int").IsRequired();
                 e.Property(e => e.SubTotal).HasColumnType("int").IsRequired();
                 e.HasOne(e => e.Produk);
-                e.HasOne(e => e.Penjualam);
+                e.HasOne(e => e.Penjualan);
             });
         }
     }

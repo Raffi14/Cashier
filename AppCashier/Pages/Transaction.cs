@@ -16,11 +16,13 @@ namespace POST_System.Pages
         private bool isInitialized = false;
         public int total = 0;
         public string data;
-        public Transaction()
+        public User_account User;
+        public Transaction(User_account user)
         {
             InitializeComponent();
             LoadComboBoxProduct();
-            label1.Text = "SILAHKAN PILIH PRODUK TERLEBIH DAHULU";
+            User = user;
+            textBox1.Text = "0";
         }
 
         private void LoadComboBoxProduct()
@@ -45,12 +47,13 @@ namespace POST_System.Pages
                     int quantity = Convert.ToInt32(row.Cells["Kuantitas"].Value);
                     int harga = Convert.ToInt32(row.Cells["HargaSatuan"].Value);
                     int totalHarga = quantity * harga;
+                    row.Cells["totalHarga"].Value = totalHarga;
                     subTotal += totalHarga;
                 }
             }
 
             total = subTotal;
-            label1.Text = $"Total Harga: {total}";
+            textBox1.Text = total.ToString();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -85,7 +88,7 @@ namespace POST_System.Pages
 
                         if (!productExists)
                         {
-                            dataGridView1.Rows.Add(selectedProduct.Nama, 1, selectedProduct.Harga);
+                            dataGridView1.Rows.Add(selectedProduct.Nama, 1, selectedProduct.Harga, selectedProduct.Harga);
                             UpdateTotalHarga();
                         }
                         else
@@ -138,7 +141,35 @@ namespace POST_System.Pages
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Sale sale = new Sale
+            {
+                Tanggal = DateTime.Now,
+                TotalHarga = int.Parse(textBox1.Text),
+                User = User,
+            };
 
+            Program.db.Sales.Add(sale);
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                var product = Program.db.Products.FirstOrDefault(p => p.Nama.ToLower() == row.Cells["NamaBarang"].Value.ToString().ToLower());
+                SaleDetail saleDetail = new SaleDetail
+                {
+                    Produk = product,
+                    Kuantitas = int.Parse(row.Cells["Kuantitas"].Value.ToString()),
+                    SubTotal = int.Parse(row.Cells["HargaSatuan"].Value.ToString()),
+                    Penjualan = sale,
+                };
+
+                Program.db.SaleDetails.Add(saleDetail);
+
+                product.Stok -= Convert.ToInt32(row.Cells["Kuantitas"].Value);
+
+                Program.db.Products.Update(product);
+                Program.db.SaveChanges();
+            }
+
+            dataGridView1.Rows.Clear();
         }
     }
 }

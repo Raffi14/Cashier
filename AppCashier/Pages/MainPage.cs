@@ -74,7 +74,7 @@ namespace POST_System
             isActive = "dataTransaction";
             if (isActive == "dataTransaction")
             {
-                Transaction transaction = new Transaction();
+                Transaction transaction = new Transaction(User);
                 transaction.TopLevel = false;
                 transaction.Dock = DockStyle.Fill;
                 transaction.FormBorderStyle = FormBorderStyle.None;

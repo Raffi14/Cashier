@@ -79,11 +79,11 @@ namespace POST_System.AdminPages
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string searchText = Search.Text;
+            string searchText = Search.Text.ToLower();
 
             if(searchText.Length > 0)
             {
-                productBindingSource.DataSource = Program.db.Products.Where(v => v.Nama.Contains(searchText)).OrderBy(v => v.Nama).ToList();
+                productBindingSource.DataSource = Program.db.Products.Where(v => v.Nama.ToLower().Contains(searchText)).OrderBy(v => v.Nama).ToList();
             }
             else
             {

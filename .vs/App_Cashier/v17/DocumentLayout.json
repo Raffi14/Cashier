@@ -3,7 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\pages\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\pages\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\pages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\pages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\pages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\pages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\pages\\petugas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\pages\\petugas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\pages\\petugas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\pages\\petugas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\pages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\pages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\pages\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\pages\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\db_create\\saledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\db_create\\saledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|c:\\users\\lenovo\\source\\repos\\app_cashier\\appcashier\\pages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\pages\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\appcashier\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD68F03-E63C-4263-B0C6-3F38FCA0D6FC}|AppCashier\\App_Cashier.csproj|solutionrelative:appcashier\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -14,19 +54,144 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\MainPage.cs",
+              "RelativeDocumentMoniker": "AppCashier\\Pages\\MainPage.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\MainPage.cs [Design]",
+              "RelativeToolTip": "AppCashier\\Pages\\MainPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T00:23:28.421Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Petugas.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\Petugas.cs",
+              "RelativeDocumentMoniker": "AppCashier\\Pages\\Petugas.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\Petugas.cs",
+              "RelativeToolTip": "AppCashier\\Pages\\Petugas.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAlwFEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T00:23:21.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Petugas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\Petugas.cs",
+              "RelativeDocumentMoniker": "AppCashier\\Pages\\Petugas.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\Petugas.cs [Design]",
+              "RelativeToolTip": "AppCashier\\Pages\\Petugas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T00:23:16.848Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "database.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\database.cs",
+              "RelativeDocumentMoniker": "AppCashier\\database.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\database.cs",
+              "RelativeToolTip": "AppCashier\\database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T23:57:07.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SaleDetail.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\DB_Create\\SaleDetail.cs",
+              "RelativeDocumentMoniker": "AppCashier\\DB_Create\\SaleDetail.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\DB_Create\\SaleDetail.cs",
+              "RelativeToolTip": "AppCashier\\DB_Create\\SaleDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T23:54:46.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainPage.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\MainPage.cs",
+              "RelativeDocumentMoniker": "AppCashier\\Pages\\MainPage.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\MainPage.cs",
+              "RelativeToolTip": "AppCashier\\Pages\\MainPage.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwEwAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T23:51:49.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\ProductPage.cs",
+              "RelativeDocumentMoniker": "AppCashier\\Pages\\ProductPage.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\ProductPage.cs [Design]",
+              "RelativeToolTip": "AppCashier\\Pages\\ProductPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T23:41:27.573Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductPage.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\ProductPage.cs",
+              "RelativeDocumentMoniker": "AppCashier\\Pages\\ProductPage.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\ProductPage.cs",
+              "RelativeToolTip": "AppCashier\\Pages\\ProductPage.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwFEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T23:41:24.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Transaction.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\Transaction.cs",
+              "RelativeDocumentMoniker": "AppCashier\\Pages\\Transaction.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\Transaction.cs [Design]",
+              "RelativeToolTip": "AppCashier\\Pages\\Transaction.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T10:31:10.083Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\Transaction.cs",
+              "RelativeDocumentMoniker": "AppCashier\\Pages\\Transaction.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Pages\\Transaction.cs",
+              "RelativeToolTip": "AppCashier\\Pages\\Transaction.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAYwGMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T10:24:31.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Login.cs",
               "RelativeDocumentMoniker": "AppCashier\\Login.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\APP_CASHIER\\AppCashier\\Login.cs [Design]",
               "RelativeToolTip": "AppCashier\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T04:37:49.857Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-17T04:37:49.857Z"
             }
           ]
         }
