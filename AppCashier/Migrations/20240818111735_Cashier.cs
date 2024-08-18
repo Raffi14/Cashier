@@ -52,7 +52,7 @@ namespace POST_System.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Tanggal = table.Column<DateTime>(type: "date", nullable: false),
-                    TotalHarga = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
+                    TotalHarga = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -73,7 +73,7 @@ namespace POST_System.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     ProdukId = table.Column<int>(type: "integer", nullable: false),
-                    PenjualamId = table.Column<int>(type: "integer", nullable: false),
+                    PenjualanId = table.Column<int>(type: "integer", nullable: false),
                     Kuantitas = table.Column<int>(type: "int", nullable: false),
                     SubTotal = table.Column<int>(type: "int", nullable: false)
                 },
@@ -87,17 +87,17 @@ namespace POST_System.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SaleDetails_Sales_PenjualamId",
-                        column: x => x.PenjualamId,
+                        name: "FK_SaleDetails_Sales_PenjualanId",
+                        column: x => x.PenjualanId,
                         principalTable: "Sales",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_SaleDetails_PenjualamId",
+                name: "IX_SaleDetails_PenjualanId",
                 table: "SaleDetails",
-                column: "PenjualamId");
+                column: "PenjualanId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_SaleDetails_ProdukId",

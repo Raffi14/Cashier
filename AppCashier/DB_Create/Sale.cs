@@ -21,7 +21,7 @@ namespace POST_System.DB_Create
                 e.HasKey(e => e.Id);
                 e.Property(e => e.Id).ValueGeneratedOnAdd();
                 e.Property(e => e.Tanggal).HasColumnType("date").IsRequired();
-                e.Property(e => e.TotalHarga).HasColumnType("decimal(10,2)").IsRequired();
+                e.Property(e => e.TotalHarga).HasColumnType("int").IsRequired();
                 e.HasOne(e => e.User);
             });
         }

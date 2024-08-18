@@ -56,8 +56,8 @@ namespace POST_System.Migrations
                     b.Property<DateTime>("Tanggal")
                         .HasColumnType("date");
 
-                    b.Property<decimal>("TotalHarga")
-                        .HasColumnType("decimal(10,2)");
+                    b.Property<int>("TotalHarga")
+                        .HasColumnType("int");
 
                     b.Property<int>("UserId")
                         .HasColumnType("integer");
@@ -80,7 +80,7 @@ namespace POST_System.Migrations
                     b.Property<int>("Kuantitas")
                         .HasColumnType("int");
 
-                    b.Property<int>("PenjualamId")
+                    b.Property<int>("PenjualanId")
                         .HasColumnType("integer");
 
                     b.Property<int>("ProdukId")
@@ -91,7 +91,7 @@ namespace POST_System.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PenjualamId");
+                    b.HasIndex("PenjualanId");
 
                     b.HasIndex("ProdukId");
 
@@ -148,9 +148,9 @@ namespace POST_System.Migrations
 
             modelBuilder.Entity("POST_System.DB_Create.SaleDetail", b =>
                 {
-                    b.HasOne("POST_System.DB_Create.Sale", "Penjualam")
+                    b.HasOne("POST_System.DB_Create.Sale", "Penjualan")
                         .WithMany()
-                        .HasForeignKey("PenjualamId")
+                        .HasForeignKey("PenjualanId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -160,7 +160,7 @@ namespace POST_System.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Penjualam");
+                    b.Navigation("Penjualan");
 
                     b.Navigation("Produk");
                 });

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("App_Cashier")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a0d5b5674e0b0595bc497c64b05c5de780da85e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28e2b959c3ad1cd80f9938cc9d29074d666ad413")]
 [assembly: System.Reflection.AssemblyProductAttribute("App_Cashier")]
 [assembly: System.Reflection.AssemblyTitleAttribute("App_Cashier")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

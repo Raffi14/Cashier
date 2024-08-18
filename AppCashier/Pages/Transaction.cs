@@ -26,7 +26,7 @@ namespace POST_System.Pages
 
         private void LoadComboBoxProduct()
         {
-            var products = Program.db.Products.Select(p => new { p.Id, p.Nama }).ToList();
+            var products = Program.db.Products.Where(e => e.Stok > 0).Select(p => new { p.Id, p.Nama }).ToList();
             comboBox1.DataSource = products;
             comboBox1.DisplayMember = "Nama";
             comboBox1.ValueMember = "Id";
