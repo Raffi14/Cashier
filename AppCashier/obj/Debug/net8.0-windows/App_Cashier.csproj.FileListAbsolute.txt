@@ -216,3 +216,4 @@ C:\Users\LENOVO\source\repos\APP_CASHIER\AppCashier\obj\Debug\net8.0-windows\ref
 C:\Users\LENOVO\source\repos\APP_CASHIER\AppCashier\obj\Debug\net8.0-windows\App_Cashier.pdb
 C:\Users\LENOVO\source\repos\APP_CASHIER\AppCashier\obj\Debug\net8.0-windows\App_Cashier.genruntimeconfig.cache
 C:\Users\LENOVO\source\repos\APP_CASHIER\AppCashier\obj\Debug\net8.0-windows\ref\App_Cashier.dll
+C:\Users\LENOVO\source\repos\APP_CASHIER\AppCashier\obj\Debug\net8.0-windows\POST_System.Pages.Riwayat.resources

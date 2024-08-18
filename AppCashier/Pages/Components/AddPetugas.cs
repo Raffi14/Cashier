@@ -29,11 +29,11 @@ namespace POST_System.Pages.Components
         {
             if (string.IsNullOrEmpty(InpName.Text) || string.IsNullOrEmpty(InpNo.Text) || string.IsNullOrEmpty(InpAlamat.Text) || string.IsNullOrEmpty(InpUsername.Text) || string.IsNullOrEmpty(InpPass.Text))
             {
-                MessageBox.Show("Please fill all the coloumn", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Harap isi semua kolom", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            DialogResult result = MessageBox.Show("Are you sure you?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult result = MessageBox.Show("Apakah anda yakin ingin menambahkan data ini?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (result == DialogResult.Yes)
             {
                 DB_Create.User_account user = new DB_Create.User_account

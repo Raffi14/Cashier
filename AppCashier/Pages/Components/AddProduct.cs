@@ -26,11 +26,11 @@ namespace POST_System.AdminPages
         {
             if (string.IsNullOrEmpty(InpStock.Text) || string.IsNullOrEmpty(InpPrice.Text) || string.IsNullOrEmpty(InpName.Text))
             {
-                MessageBox.Show("Please fill all the coloumn", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Harap isi semua kolom", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            DialogResult result = MessageBox.Show("Are you sure you?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult result = MessageBox.Show("Apakah anda yakin ingin menambahkan data ini?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (result == DialogResult.Yes)
             {
                 DB_Create.Product product = new DB_Create.Product

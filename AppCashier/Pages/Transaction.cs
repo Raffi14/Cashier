@@ -22,7 +22,6 @@ namespace POST_System.Pages
             InitializeComponent();
             LoadComboBoxProduct();
             User = user;
-            textBox1.Text = "0";
         }
 
         private void LoadComboBoxProduct()
@@ -108,6 +107,11 @@ namespace POST_System.Pages
                 var productName = row.Cells["NamaBarang"].Value.ToString();
                 var quantityCell = row.Cells["Kuantitas"];
                 int quantity;
+                
+                if(quantityCell.Value == null || quantityCell.Value.ToString() == "0")
+                {
+                    quantityCell.Value = 1;
+                }
 
                 if (int.TryParse(quantityCell.Value.ToString(), out quantity))
                 {
@@ -134,13 +138,37 @@ namespace POST_System.Pages
         {
             if (e.RowIndex >= 0)
             {
-                dataGridView1.Rows.RemoveAt(e.RowIndex);
-                UpdateTotalHarga();
+                DialogResult result = MessageBox.Show("Apakah anda ingin menghapus pilihan ini?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (result == DialogResult.Yes)
+                {
+                    dataGridView1.Rows.RemoveAt(e.RowIndex);
+                    UpdateTotalHarga();
+                }
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("Tidak ada barang yang dibeli");
+                return;
+            }
+
+            if(Bayar.Text.Length == 0)
+            {
+                MessageBox.Show("masukkan nominal bayar");
+                return;
+            }
+
+            if(int.Parse(Bayar.Text) < int.Parse(textBox1.Text))
+            {
+                MessageBox.Show("Nominal pembayaran tidak mencukupi");
+                return;
+            }
+
             Sale sale = new Sale
             {
                 Tanggal = DateTime.Now,
@@ -157,7 +185,7 @@ namespace POST_System.Pages
                 {
                     Produk = product,
                     Kuantitas = int.Parse(row.Cells["Kuantitas"].Value.ToString()),
-                    SubTotal = int.Parse(row.Cells["HargaSatuan"].Value.ToString()),
+                    SubTotal = int.Parse(row.Cells["totalHarga"].Value.ToString()),
                     Penjualan = sale,
                 };
 
@@ -169,7 +197,25 @@ namespace POST_System.Pages
                 Program.db.SaveChanges();
             }
 
+            StringBuilder receipt = new StringBuilder();
+            receipt.AppendLine("===== Struk Pembayaran =====");
+            receipt.AppendLine($"Tanggal: {DateTime.Now}");
+            receipt.AppendLine($"User: {User.Nama}");
+            receipt.AppendLine("Detail Pembelian:");
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                receipt.AppendLine($"{row.Cells["NamaBarang"].Value}\t{row.Cells["Kuantitas"].Value}\t{row.Cells["HargaSatuan"].Value}");
+            }
+
+            receipt.AppendLine("----------------------------");
+            receipt.AppendLine($"Total Harga: {textBox1.Text}");
+            receipt.AppendLine($"Kembalian: {int.Parse(Bayar.Text) - int.Parse(textBox1.Text)}");
+            receipt.AppendLine("======================");
+            MessageBox.Show(receipt.ToString(), "Struk Pembayaran");
             dataGridView1.Rows.Clear();
+            textBox1.Text = "0";
+            Bayar.Text = "0";
         }
-    }
+     }
 }

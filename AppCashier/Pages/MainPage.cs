@@ -114,8 +114,14 @@ namespace POST_System
             isActive = "Riwayat";
             if (isActive == "Riwayat")
             {
+                Riwayat riwayat = new Riwayat();
+                riwayat.TopLevel = false;
+                riwayat.Dock = DockStyle.Fill;
+                riwayat.FormBorderStyle = FormBorderStyle.None;
                 productBox.Controls.Clear();
+                productBox.Controls.Add(riwayat);
                 productBox.Text = "Riwayat Transaksi";
+                riwayat.Show();
                 TransactionNav.BackColor = Color.Gray;
                 ProductNav.BackColor = Color.Gray;
                 Staff.BackColor = Color.Gray;

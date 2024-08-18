@@ -27,7 +27,7 @@ namespace POST_System.Pages.Components
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult result = MessageBox.Show("Apakah anda yakin ingin memperbarui data ini?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (result == DialogResult.Yes)
             {
                 userSelected.Nama = EdName.Text;

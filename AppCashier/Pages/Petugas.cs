@@ -44,11 +44,11 @@ namespace POST_System.AdminPages
         private void button1_Click(object sender, EventArgs e)
         {
             if (Id_petugas == string.Empty)
-                MessageBox.Show("Please select a product");
+                MessageBox.Show("Harap pilih data petugas terlebih dahulu");
 
             if (Id_petugas != string.Empty)
             {
-                DialogResult result = MessageBox.Show("Are you sure you to delete this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult result = MessageBox.Show("Apakah anda yakin ingin menghapus petugas ini?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (result == DialogResult.Yes)
                 {
                     var PetugasId = Program.db.Users.Find(Convert.ToInt32(Id_petugas));
@@ -83,7 +83,7 @@ namespace POST_System.AdminPages
 
             if (searchText.Length > 0)
             {
-                useraccountBindingSource.DataSource = Program.db.Products.Where(v => v.Nama.ToLower().Contains(searchText)).OrderBy(v => v.Nama).ToList();
+                useraccountBindingSource.DataSource = Program.db.Users.Where(v => v.Tipe_User == "petugas" && v.Nama.ToLower().Contains(searchText)).OrderBy(v => v.Nama).ToList();
             }
             else
             {

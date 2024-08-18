@@ -57,11 +57,11 @@ namespace POST_System.AdminPages
         {
 
             if (IdProduct == string.Empty)
-                MessageBox.Show("Please select a product");
+                MessageBox.Show("Harap pilih produk terlebih dahulu");
 
             if(IdProduct != string.Empty)
             {
-                DialogResult result = MessageBox.Show("Are you sure you to delete this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult result = MessageBox.Show("Apakah anda yakin ingin menghapus produk ini?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (result == DialogResult.Yes)
                 {
                     var ProductId = Program.db.Products.Find(Convert.ToInt32(IdProduct));
