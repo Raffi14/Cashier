@@ -104,7 +104,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Ascending", "Descending" });
+            comboBox1.Items.AddRange(new object[] { "Terbaru", "Terlama" });
             comboBox1.Location = new Point(3, 28);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(165, 28);

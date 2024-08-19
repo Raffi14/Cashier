@@ -47,7 +47,7 @@ namespace POST_System.Pages
                     e.Tanggal,
                     e.TotalHarga,
                     User = e.User.Nama,
-                }).OrderByDescending(e => e.Id).ToList();
+                }).OrderBy(v => v.Id).ToList();
             }
         }
 

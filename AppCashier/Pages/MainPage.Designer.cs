@@ -74,10 +74,10 @@
             // Username
             // 
             Username.AutoSize = true;
-            Username.Font = new Font("Snap ITC", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            Username.Location = new Point(0, 24);
+            Username.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Username.Location = new Point(3, 31);
             Username.Name = "Username";
-            Username.Size = new Size(121, 27);
+            Username.Size = new Size(107, 26);
             Username.TabIndex = 2;
             Username.Text = "Username";
             // 
