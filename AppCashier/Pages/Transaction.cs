@@ -20,20 +20,8 @@ namespace POST_System.Pages
         public Transaction(User_account user)
         {
             InitializeComponent();
-            LoadComboBoxProduct();
             User = user;
-        }
-
-        private void LoadComboBoxProduct()
-        {
-            var products = Program.db.Products.Where(e => e.Stok > 0).Select(p => new { p.Id, p.Nama }).ToList();
-            comboBox1.DataSource = products;
-            comboBox1.DisplayMember = "Nama";
-            comboBox1.ValueMember = "Id";
-            comboBox1.SelectedIndex = -1;
-            comboBox1.Text = "Pilih produk";
-            comboBox1.SelectedItem = null;
-            isInitialized = true;
+            listBox1.Visible = false;
         }
 
         private void UpdateTotalHarga()
@@ -54,12 +42,29 @@ namespace POST_System.Pages
             total = subTotal;
             textBox1.Text = total.ToString();
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ProductList(dynamic products)
         {
-            if (isInitialized && comboBox1.SelectedIndex != -1 && comboBox1.SelectedItem != null)
+            listBox1.Items.Clear();
+            foreach (var product in products)
             {
-                var selectedItem = comboBox1.SelectedItem;
+                listBox1.Visible = true;
+                listBox1.Items.Add(product);
+            }
+
+            if (products.Count == 0)
+            {
+                listBox1.Visible = false;
+            }
+
+            listBox1.DisplayMember = "Nama";
+            isInitialized = true;
+            listBox1.Height = 24 * products.Count;
+        }
+        private void listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (isInitialized && listBox1.SelectedIndex != -1 && listBox1.SelectedItem != null)
+            {
+                var selectedItem = listBox1.SelectedItem;
                 if (selectedItem != null)
                 {
                     var product = (dynamic)selectedItem;
@@ -107,8 +112,8 @@ namespace POST_System.Pages
                 var productName = row.Cells["NamaBarang"].Value.ToString();
                 var quantityCell = row.Cells["Kuantitas"];
                 int quantity;
-                
-                if(quantityCell.Value == null || quantityCell.Value.ToString() == "0")
+
+                if (quantityCell.Value == null || quantityCell.Value.ToString() == "0")
                 {
                     quantityCell.Value = 1;
                 }
@@ -157,13 +162,13 @@ namespace POST_System.Pages
                 return;
             }
 
-            if(Bayar.Text.Length == 0)
+            if (Bayar.Text.Length == 0)
             {
                 MessageBox.Show("masukkan nominal bayar");
                 return;
             }
 
-            if(int.Parse(Bayar.Text) < int.Parse(textBox1.Text))
+            if (int.Parse(Bayar.Text) < int.Parse(textBox1.Text))
             {
                 MessageBox.Show("Nominal pembayaran tidak mencukupi");
                 return;
@@ -217,5 +222,46 @@ namespace POST_System.Pages
             textBox1.Text = "0";
             Bayar.Text = "0";
         }
-     }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            string search = textBox2.Text.ToLower();
+
+            var products = Program.db.Products
+                .Where(e => e.Stok > 0 && e.Nama.ToLower().Contains(search))
+                .Select(p => new { p.Id, p.Nama })
+                .ToList();
+
+            ProductList(products);
+
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (!listBox1.Focused)
+            {
+                listBox1.Visible = false;
+            }
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            var products = Program.db.Products
+                .Where(e => e.Stok > 0)
+                .Select(p => new { p.Id, p.Nama })
+                .ToList();
+
+            ProductList(products);
+        }
+
+        private void listBox1_Enter(object sender, EventArgs e)
+        {
+            listBox1.Visible = true;
+        }
+
+        private void listBox1_Leave(object sender, EventArgs e)
+        {
+            listBox1.Visible = false;
+        }
+    }
 }

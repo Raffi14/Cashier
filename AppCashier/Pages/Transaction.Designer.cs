@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            label5 = new Label();
             label4 = new Label();
             Bayar = new TextBox();
             textBox1 = new TextBox();
             label2 = new Label();
             button1 = new Button();
-            comboBox1 = new ComboBox();
             dataGridView1 = new DataGridView();
             NamaBarang = new DataGridViewTextBoxColumn();
             Kuantitas = new DataGridViewTextBoxColumn();
             HargaSatuan = new DataGridViewTextBoxColumn();
             Totalharga = new DataGridViewTextBoxColumn();
             splitContainer1 = new SplitContainer();
+            textBox2 = new TextBox();
+            listBox1 = new ListBox();
             label3 = new Label();
             label1 = new Label();
-            label5 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -65,6 +66,16 @@
             groupBox1.Size = new Size(195, 498);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(12, 60);
+            label5.Name = "label5";
+            label5.Size = new Size(145, 31);
+            label5.TabIndex = 6;
+            label5.Text = "Pembayaran";
             // 
             // label4
             // 
@@ -112,15 +123,6 @@
             button1.Text = "Beli";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(14, 23);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(209, 28);
-            comboBox1.TabIndex = 1;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // dataGridView1
             // 
@@ -175,10 +177,11 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.BackColor = Color.CadetBlue;
+            splitContainer1.Panel1.Controls.Add(textBox2);
+            splitContainer1.Panel1.Controls.Add(listBox1);
             splitContainer1.Panel1.Controls.Add(label3);
             splitContainer1.Panel1.Controls.Add(label1);
             splitContainer1.Panel1.Controls.Add(dataGridView1);
-            splitContainer1.Panel1.Controls.Add(comboBox1);
             // 
             // splitContainer1.Panel2
             // 
@@ -186,6 +189,29 @@
             splitContainer1.Size = new Size(746, 521);
             splitContainer1.SplitterDistance = 545;
             splitContainer1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Location = new Point(14, 17);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Cari produk";
+            textBox2.Size = new Size(152, 27);
+            textBox2.TabIndex = 7;
+            textBox2.TextChanged += textBox2_TextChanged;
+            textBox2.Enter += textBox2_Enter;
+            textBox2.Leave += textBox2_Leave;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.Location = new Point(14, 50);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(152, 24);
+            listBox1.TabIndex = 16;
+            listBox1.SelectedIndexChanged += listbox_SelectedIndexChanged;
+            listBox1.Enter += listBox1_Enter;
+            listBox1.Leave += listBox1_Leave;
             // 
             // label3
             // 
@@ -206,16 +232,6 @@
             label1.Size = new Size(340, 15);
             label1.TabIndex = 14;
             label1.Text = "*double click untuk menghapus pilihan";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(12, 60);
-            label5.Name = "label5";
-            label5.Size = new Size(145, 31);
-            label5.TabIndex = 6;
-            label5.Text = "Pembayaran";
             // 
             // Transaction
             // 
@@ -241,7 +257,6 @@
         private GroupBox groupBox1;
         private Label label2;
         private Button button1;
-        private ComboBox comboBox1;
         private DataGridView dataGridView1;
         private SplitContainer splitContainer1;
         private TextBox textBox1;
@@ -254,5 +269,7 @@
         private Label label4;
         private TextBox Bayar;
         private Label label5;
+        private ListBox listBox1;
+        private TextBox textBox2;
     }
 }
