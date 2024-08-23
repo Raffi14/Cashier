@@ -243,7 +243,7 @@ namespace POST_System.Pages
                 listBox1.Visible = false;
             }
         }
-
+    
         private void textBox2_Enter(object sender, EventArgs e)
         {
             var products = Program.db.Products

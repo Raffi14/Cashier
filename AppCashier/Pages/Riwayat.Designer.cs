@@ -49,10 +49,11 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = Color.DarkGray;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id, tanggalDataGridViewTextBoxColumn, totalHargaDataGridViewTextBoxColumn, userDataGridViewTextBoxColumn });
             dataGridView1.DataSource = saleBindingSource;
-            dataGridView1.Location = new Point(3, 87);
+            dataGridView1.Location = new Point(2, 87);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersVisible = false;

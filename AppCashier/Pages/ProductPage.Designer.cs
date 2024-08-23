@@ -62,7 +62,7 @@
             ProductList.AllowUserToResizeRows = false;
             ProductList.AutoGenerateColumns = false;
             ProductList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            ProductList.BackgroundColor = Color.Silver;
+            ProductList.BackgroundColor = Color.DarkGray;
             ProductList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             ProductList.Columns.AddRange(new DataGridViewColumn[] { Id, namaDataGridViewTextBoxColumn, hargaDataGridViewTextBoxColumn, stokDataGridViewTextBoxColumn });
             ProductList.DataSource = productBindingSource;
@@ -159,6 +159,7 @@
             Controls.Add(button1);
             Controls.Add(AddProduct);
             Controls.Add(ProductList);
+            MaximumSize = new Size(1920, 1080);
             Name = "ProductPage";
             Text = "Product";
             ((System.ComponentModel.ISupportInitialize)ProductList).EndInit();

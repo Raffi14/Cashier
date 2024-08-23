@@ -22,6 +22,17 @@ namespace POST_System
         {
             InitializeComponent();
             this.User = user;
+
+            switch (user.Tipe_User)
+            {
+                case "petugas":
+                    transactionMenu();
+                    break;
+                case "admin":
+                    productMenu();
+                    break;
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,23 +60,44 @@ namespace POST_System
             }
         }
 
+        private void transactionMenu()
+        {
+            Transaction transaction = new Transaction(User);
+            transaction.TopLevel = false;
+            transaction.Dock = DockStyle.Fill;
+            transaction.FormBorderStyle = FormBorderStyle.None;
+            productBox.Controls.Clear();
+            productBox.Controls.Add(transaction);
+            productBox.Text = "Transaksi";
+            transaction.Show();
+            TransactionNav.BackColor = Color.Transparent;
+            ProductNav.BackColor = Color.Gray;
+            Staff.BackColor = Color.Gray;
+            Riwayat.BackColor = Color.Gray;
+        }
+
+        private void productMenu()
+        {
+            ProductPage product = new ProductPage();
+            product.TopLevel = false;
+            product.Dock = DockStyle.Fill;
+            product.FormBorderStyle = FormBorderStyle.None;
+            productBox.Controls.Clear();
+            productBox.Controls.Add(product);
+            productBox.Text = "Data Produk";
+            product.Show();
+            ProductNav.BackColor = Color.Transparent;
+            TransactionNav.BackColor = Color.Gray;
+            Staff.BackColor = Color.Gray;
+            Riwayat.BackColor = Color.Gray;
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             isActive = "dataProduct";
             if (isActive == "dataProduct")
             {
-                ProductPage product = new ProductPage();
-                product.TopLevel = false;
-                product.Dock = DockStyle.Fill;
-                product.FormBorderStyle = FormBorderStyle.None;
-                productBox.Controls.Clear();
-                productBox.Controls.Add(product);
-                productBox.Text = "Data Produk";
-                product.Show();
-                ProductNav.BackColor = Color.Transparent;
-                TransactionNav.BackColor = Color.Gray;
-                Staff.BackColor = Color.Gray;
-                Riwayat.BackColor = Color.Gray;
+                productMenu();
             }
         }
 
@@ -74,18 +106,7 @@ namespace POST_System
             isActive = "dataTransaction";
             if (isActive == "dataTransaction")
             {
-                Transaction transaction = new Transaction(User);
-                transaction.TopLevel = false;
-                transaction.Dock = DockStyle.Fill;
-                transaction.FormBorderStyle = FormBorderStyle.None;
-                productBox.Controls.Clear();
-                productBox.Controls.Add(transaction);
-                productBox.Text = "Transaksi";
-                transaction.Show();
-                TransactionNav.BackColor = Color.Transparent;
-                ProductNav.BackColor = Color.Gray;
-                Staff.BackColor = Color.Gray;
-                Riwayat.BackColor = Color.Gray;
+                transactionMenu();
             }
         }
 

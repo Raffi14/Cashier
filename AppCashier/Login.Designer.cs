@@ -38,10 +38,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Stencil", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 29);
+            label1.Font = new Font("Stencil", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(49, 35);
             label1.Name = "label1";
-            label1.Size = new Size(343, 47);
+            label1.Size = new Size(322, 44);
             label1.TabIndex = 0;
             label1.Text = "Aplikasi Kasir";
             // 
@@ -57,7 +57,9 @@
             // 
             // username
             // 
-            username.Location = new Point(49, 121);
+            username.BackColor = Color.DarkGray;
+            username.BorderStyle = BorderStyle.FixedSingle;
+            username.Location = new Point(49, 134);
             username.Name = "username";
             username.PlaceholderText = "username";
             username.Size = new Size(330, 27);
@@ -65,7 +67,8 @@
             // 
             // password
             // 
-            password.BackColor = SystemColors.Window;
+            password.BackColor = Color.DarkGray;
+            password.BorderStyle = BorderStyle.FixedSingle;
             password.Location = new Point(49, 192);
             password.Name = "password";
             password.PasswordChar = '*';

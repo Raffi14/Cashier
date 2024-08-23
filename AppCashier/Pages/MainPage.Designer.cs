@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            productBindingSource = new BindingSource(components);
             panel1 = new Panel();
             Riwayat = new Button();
             Username = new Label();
@@ -38,13 +36,8 @@
             ProductNav = new Button();
             LogOutButton = new Button();
             productBox = new GroupBox();
-            ((System.ComponentModel.ISupportInitialize)productBindingSource).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // productBindingSource
-            // 
-            productBindingSource.DataSource = typeof(DB_Create.Product);
             // 
             // panel1
             // 
@@ -55,9 +48,11 @@
             panel1.Controls.Add(TransactionNav);
             panel1.Controls.Add(ProductNav);
             panel1.Controls.Add(LogOutButton);
-            panel1.Location = new Point(1, 0);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.MaximumSize = new Size(720, 1080);
             panel1.Name = "panel1";
-            panel1.Size = new Size(132, 515);
+            panel1.Size = new Size(132, 514);
             panel1.TabIndex = 0;
             // 
             // Riwayat
@@ -75,7 +70,7 @@
             // 
             Username.AutoSize = true;
             Username.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Username.Location = new Point(3, 31);
+            Username.Location = new Point(11, 31);
             Username.Name = "Username";
             Username.Size = new Size(107, 26);
             Username.TabIndex = 2;
@@ -127,9 +122,12 @@
             // 
             // productBox
             // 
+            productBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            productBox.BackColor = Color.DarkGray;
             productBox.Location = new Point(125, 0);
+            productBox.MaximumSize = new Size(729, 522);
             productBox.Name = "productBox";
-            productBox.Size = new Size(731, 522);
+            productBox.Size = new Size(729, 522);
             productBox.TabIndex = 2;
             productBox.TabStop = false;
             productBox.Text = "Product";
@@ -150,14 +148,12 @@
             RightToLeft = RightToLeft.No;
             Text = "Form1";
             Load += AdminHome_Load;
-            ((System.ComponentModel.ISupportInitialize)productBindingSource).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-        private BindingSource productBindingSource;
         private Panel panel1;
         private Button LogOutButton;
         private Button Staff;
