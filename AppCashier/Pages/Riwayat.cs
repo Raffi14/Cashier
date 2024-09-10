@@ -37,17 +37,17 @@ namespace POST_System.Pages
         {
             if (comboBox1.SelectedIndex == 0)
             {
-                Refresh();
-            }
-            else
-            {
                 saleBindingSource.DataSource = Program.db.Sales.Select(e => new
                 {
                     e.Id,
                     e.Tanggal,
                     e.TotalHarga,
                     User = e.User.Nama,
-                }).OrderBy(v => v.Id).ToList();
+                }).OrderByDescending(v => v.Id).ToList();
+            }
+            else
+            {
+                Refresh();
             }
         }
 
